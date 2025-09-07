@@ -1,0 +1,84 @@
+{
+  "name": "simple-todos",
+  "displayName": "Simple Todos",
+  "description": "A simple todo list extension for VSCode with global and project-specific todos",
+  "version": "0.1.0",
+  "publisher": "xtawfik",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xtawfik/simple-todos"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "icon": "images/icon.png",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "simple-todos",
+          "title": "Simple Todos",
+          "icon": "images/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "simple-todos": [
+        {
+          "type": "webview",
+          "id": "simpleTodos.todoView",
+          "name": "Todos",
+          "icon": "$(checklist)",
+          "contextualTitle": "Simple Todos"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "simpleTodos.quickAdd",
+        "title": "Quick Add Todo",
+        "category": "Simple Todos"
+      },
+      {
+        "command": "simpleTodos.toggleSidebar",
+        "title": "Toggle Todos Sidebar",
+        "category": "Simple Todos"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "simpleTodos.quickAdd",
+        "key": "ctrl+alt+t",
+        "mac": "cmd+alt+t"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile && npm run build:webview",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "build:webview": "cd webview-ui && npx vite build",
+    "dev:webview": "cd webview-ui && npm run dev",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@types/vscode": "^1.85.0",
+    "@typescript-eslint/eslint-plugin": "^8.42.0",
+    "@typescript-eslint/parser": "^8.42.0",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.34.0",
+    "typescript": "^5.9.2"
+  }
+}
