@@ -2,7 +2,7 @@
 
 A clean and intuitive todo list extension for Visual Studio Code that helps you stay organized with both global and project-specific todos.
 
-<img width="3022" height="1886" alt="CleanShot 2025-09-07 at 13 11 15@2x" src="https://github.com/user-attachments/assets/0e80b688-fc4f-421c-a2ad-785371858226" />
+<img alt="CleanShot 2025-09-07 at 13 11 15@2x" src="https://github.com/user-attachments/assets/0e80b688-fc4f-421c-a2ad-785371858226" />
 
 ## ✨ Features
 
@@ -16,15 +16,15 @@ A clean and intuitive todo list extension for Visual Studio Code that helps you 
 - **⚡ Quick Add**: Use keyboard shortcut (`Ctrl+Alt+T` / `Cmd+Alt+T`) to quickly add todos
 - **💾 Persistent Storage**: Global todos are saved in VSCode storage, project todos in `.vscode/todos.json`
   
-<img width="3022" height="1886" alt="CleanShot 2025-09-07 at 13 11 42@2x" src="https://github.com/user-attachments/assets/c72560fb-eda4-4213-9312-53d3241d8620" />
+<img alt="CleanShot 2025-09-07 at 13 11 42@2x" src="https://github.com/user-attachments/assets/c72560fb-eda4-4213-9312-53d3241d8620" />
 
 `Paste multiple lines and choose to create separate todos or keep as one`
 
-<img width="3022" height="1892" alt="CleanShot 2025-09-07 at 13 11 52@2x" src="https://github.com/user-attachments/assets/72f42276-6d77-40d4-aa04-71adcec59341" />
+<img alt="CleanShot 2025-09-07 at 13 11 52@2x" src="https://github.com/user-attachments/assets/72f42276-6d77-40d4-aa04-71adcec59341" />
 
 `TODO details modal`
 
-<img width="3022" height="1890" alt="CleanShot 2025-09-07 at 13 12 24@2x" src="https://github.com/user-attachments/assets/98b647ba-935b-41c7-ab7a-8ab1889ed5de" />
+<img alt="CleanShot 2025-09-07 at 13 12 24@2x" src="https://github.com/user-attachments/assets/98b647ba-935b-41c7-ab7a-8ab1889ed5de" />
 
 `Completed TODOs history`
 
